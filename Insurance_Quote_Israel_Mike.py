@@ -9,14 +9,16 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import glob
 
-
-
 #def functions for pre-processing , feature engineering etc
 
 #pre-processing
 ##type conversions dtype conversion (int64 to int32)
 ##NaN fill with fill with means or medians? Or -1
 ##Data label encoding (SCIKIT LEARN) for call categorical features that are float or number with decimal .
+
+def mem_use(Dataframe):
+    mem_use = Dataframe.memory_usage().sum() / 1024 ** 3  # this data set takes >1.7G RAM, we should optimize it after
+    print('Memory usage of dataframe is {:.2f} GB'.format(mem_use))
 
 #Feature Engineering
 ##Convert timestamp and split day month year day of week etc.
@@ -29,6 +31,6 @@ file_name = os.path.join(DATA_PATH,'train.csv')
 train_df = pd.read_csv(file_name)
 print(train_df.shape)
 
-
+mem_use(train_df)
 
 #run functions
