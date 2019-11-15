@@ -34,6 +34,7 @@ There is 9 columns that have random values in them, other than what the model ex
 'PropertyField3','PropertyField4','PropertyField32','PropertyField34','PropertyField36',
                            'PropertyField38','PersonalField7','PersonalField4A',
                            'PersonalField4B'
-  We need to pick through these ans see what their individual issues are. For the sake of progress, we dropped them from the dataset for now
+                           
+ We need to pick through these ans see what their individual issues are. For the sake of progress, we dropped them from the dataset for now
 
 
