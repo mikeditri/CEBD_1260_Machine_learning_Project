@@ -30,5 +30,10 @@ Feature important selection (questions should this be done after feature enginee
 
 Split your data into train and test and validate (do we do this after all this preprocessing and feature eng or in parralel? Confirmed to do cleaning before splitting)
 
+There is 9 columns that have random values in them, other than what the model expected. They are :
+'PropertyField3','PropertyField4','PropertyField32','PropertyField34','PropertyField36',
+                           'PropertyField38','PersonalField7','PersonalField4A',
+                           'PersonalField4B'
+  We need to pick through these ans see what their individual issues are. For the sake of progress, we dropped them from the dataset for now
 
 
