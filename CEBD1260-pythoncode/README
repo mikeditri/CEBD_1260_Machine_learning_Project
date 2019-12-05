@@ -1,0 +1,5 @@
+Here are the .py files.
+To run the code properly, create a new project directory and drag in all the 5 files, that includes the train.csv file.
+First run the  _cleaning.py, then  _preprocessing.py and lastly _Project.py
+The _Project.py uses LightGBM Classifier model.
+Run  _RFCmodel_evaluation.py to see performance of RandomForestClassifier give the same conditions
